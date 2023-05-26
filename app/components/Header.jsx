@@ -28,8 +28,25 @@ const Header = () => {
             <AiOutlineMenu />
           </button>
         </div>
+        <div class="lg:flex lg:items-center lg:w-auto text-md transition hidden">
+          <div class="text-md lg:flex-grow">
+            <Link
+              href="/about"
+              class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-600 mr-4
+                "
+            >
+              About
+            </Link>
+            <Link
+              href="/codes"
+              class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-600 mr-4"
+            >
+              Codes
+            </Link>
+          </div>
+        </div>
         {isOpen && (
-          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto transition m-auto">
+          <div class="w-full block flex-grow lg:hidden transition m-auto">
             <div class="text-md lg:flex-grow">
               <Link
                 href="/about"
